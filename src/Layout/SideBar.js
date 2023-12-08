@@ -14,13 +14,15 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
 
-import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
-import ContactsIcon from '@mui/icons-material/Contacts';
+// import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
+// import ContactsIcon from '@mui/icons-material/Contacts';
 // import InboxIcon from '@mui/icons-material/MoveToInbox';
+// import MailIcon from '@mui/icons-material/Mail';
 import MailIcon from '@mui/icons-material/Mail';
 import Content from './Content';
 import NavBar from './NavBar';
 const drawerWidth = 240;
+
 const openedMixin = (theme) => ({
   width: drawerWidth,
   transition: theme.transitions.create('width', {
@@ -50,6 +52,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
   ...theme.mixins.toolbar,
 }));
+
 const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
     width: drawerWidth,
@@ -66,6 +69,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     }),
   }),
 );
+
 
 function SideBar() {
   const theme = useTheme();
@@ -138,6 +142,7 @@ function SideBar() {
                 
                 >
                   <p>index</p>
+
                   {/* {index % 2 === 0 ? <MedicalServicesIcon/> :<ContactsIcon/> } */}
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
