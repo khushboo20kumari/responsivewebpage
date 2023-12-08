@@ -3,7 +3,8 @@ import { styled } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import { Input, Typography, Avatar } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
+
+import MailIcon from '@mui/icons-material';
 
 const ariaLabel = { 'aria-label': 'description' };
 const drawerWidth = 240;
@@ -47,8 +48,11 @@ function NavBar({ open, handleDrawerOpen }) {
                         Mini variant drawer
                     </Typography>
                     <Input placeholder="Search Projects" inputProps={ariaLabel} style={{ width: "60%" }} />
+
+
                     <Avatar alt="Cindy Baker" src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/faces/face1.jpg" sx={{ m: "6px" }} />
-                    <Typography style={{color:"black"}}>David Greymax</Typography>
+                    <Typography style={{ color: "red"}}>David Greymax</Typography>
+                     {/* <MailIcon style={{color:"red"}}/> */}
                 </Toolbar>
 
             </AppBar>
