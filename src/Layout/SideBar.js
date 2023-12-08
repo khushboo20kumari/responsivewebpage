@@ -82,6 +82,7 @@ function SideBar() {
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
+            <img src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/logo.svg' className='icon'></img>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </DrawerHeader>
