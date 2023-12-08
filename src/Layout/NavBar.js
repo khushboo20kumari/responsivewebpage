@@ -9,6 +9,7 @@ import CropFreeIcon from '@mui/icons-material/CropFree';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ToggleOnTwoToneIcon from '@mui/icons-material/ToggleOnTwoTone';
 import TuneTwoToneIcon from '@mui/icons-material/TuneTwoTone';
+import { Box } from "@mui/material"
 const ariaLabel = { 'aria-label': 'description' };
 const drawerWidth = 240;
 function NavBar({ open, handleDrawerOpen }) {
@@ -47,19 +48,16 @@ function NavBar({ open, handleDrawerOpen }) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" noWrap component="div">
-                        Mini variant drawer
-                    </Typography>
-                    <Input placeholder="Search Projects" inputProps={ariaLabel} style={{ width: "60%" }} />
-
-
-                    <Avatar alt="Cindy Baker" src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/faces/face1.jpg" sx={{ m: "6px" }} />
-                    <Typography style={{ color: "red"}}>David Greymax</Typography>
-                     <MailIcon style={{color:"black"}}/>
-                     <CropFreeIcon style={{color:"black"}}/>
-                     <NotificationsIcon style={{color:"black"}}/>
-                     <ToggleOnTwoToneIcon style={{color:"black"}}/>
-                     <TuneTwoToneIcon style={{color:"black"}}/>
+                    <Box sx={{ color: "black", display: "flex" ,width:"100%",m:10, justifyContent: "space-between", alignItems: "center",fontSize:"20px"}}>
+                        <Input placeholder="Search Projects" inputProps={ariaLabel} sx={{width:"70%",m:2}} />
+                        <Avatar alt="Cindy Baker" src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/faces/face1.jpg" sm={{m:4}} />
+                        <Typography>David Greymax</Typography>
+                        <MailIcon />
+                        <CropFreeIcon />
+                        <NotificationsIcon />
+                        <ToggleOnTwoToneIcon />
+                        <TuneTwoToneIcon />
+                    </Box>
                 </Toolbar>
 
             </AppBar>
