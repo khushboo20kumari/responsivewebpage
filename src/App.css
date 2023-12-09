@@ -1,11 +1,12 @@
 .box {
-    height: 240px;
+    height: 280px;
     width: 16%;
     background-image: conic-gradient(rgb(69,201,184) 0.10turn,#72B6F1 0.70turn, rgb(254,119,150) 0.27turn);
     border-radius: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.6;
 }
 .inner-circle {
     width: 50%;

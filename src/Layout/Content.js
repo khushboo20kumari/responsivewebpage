@@ -28,7 +28,9 @@ function Content({ DrawerHeader }) {
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={3}>
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 4 : (isLargeScreen ? 4 : 8))} >
-                            <Item style={{ height: "200px" }}>Responsive</Item>
+                            <Item style={{ height: "200px" }}>
+                                <img src="weely.png"></img>
+                            </Item>
                         </Grid>
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 4 : (isLargeScreen ? 4 : 8))} style={{ height: "200px" }}>
                             <Item style={{ height: "200px" }}>Responsive</Item>
