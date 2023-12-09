@@ -5,11 +5,14 @@ import './App.css';
 // import Trafic from './Trafic';
 // import Chart from './Chart';
 // import TableData from './Table';
-import Gallery from './Layout/Gallery';
+// import Gallery from './Layout/Gallery';
+// import TableData from './Table';
+import TableSecond from './TableSecond';
 function App() {
   return (
     <div className="App">
-      <Gallery></Gallery>
+      <TableSecond/>
+      {/* <Gallery></Gallery> */}
       {/* <TableData /> */}
       {/* <Trafic/> */}
       {/* <SideBar/> */}
