@@ -4,11 +4,13 @@ import './App.css';
 // import SideBar from "./Layout/SideBar"
 // import Trafic from './Trafic';
 // import Chart from './Chart';
-import TableData from './Table';
+// import TableData from './Table';
+import Gallery from './Layout/Gallery';
 function App() {
   return (
     <div className="App">
-      <TableData />
+      <Gallery></Gallery>
+      {/* <TableData /> */}
       {/* <Trafic/> */}
       {/* <SideBar/> */}
       {/* <Chart/> */}
