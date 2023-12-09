@@ -10,6 +10,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import ToggleOnTwoToneIcon from '@mui/icons-material/ToggleOnTwoTone';
 import TuneTwoToneIcon from '@mui/icons-material/TuneTwoTone';
 import { Box } from "@mui/material"
+
 const ariaLabel = { 'aria-label': 'description' };
 const drawerWidth = 240;
 function NavBar({ open, handleDrawerOpen }) {
