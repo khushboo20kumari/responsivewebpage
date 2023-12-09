@@ -3,13 +3,6 @@ import { BarChart } from '@mui/x-charts/BarChart';
 import { axisClasses } from '@mui/x-charts';
 
 const chartSetting = {
-  yAxis: [
-    {
-      label: 'rainfall (mm)',
-    },
-  ],
-  width: 500,
-  height: 300,
   sx: {
     [`.${axisClasses.left} .${axisClasses.label}`]: {
       transform: 'translate(-20px, 0)',
@@ -55,6 +48,7 @@ const dataset = [
   {
     london: 60,
     paris: 63,
+
     newYork: 103,
     seoul: 144,
     month: 'June',
@@ -73,39 +67,13 @@ const dataset = [
     seoul: 249,
     month: 'Aug',
   },
-  {
-    london: 51,
-    paris: 51,
-    newYork: 95,
-    seoul: 131,
-    month: 'Sept',
-  },
-  {
-    london: 60,
-    paris: 65,
-    newYork: 97,
-    seoul: 55,
-    month: 'Oct',
-  },
-  {
-    london: 67,
-    paris: 64,
-    newYork: 76,
-    seoul: 48,
-    month: 'Nov',
-  },
-  {
-    london: 61,
-    paris: 70,
-    newYork: 103,
-    seoul: 25,
-    month: 'Dec',
-  },
 ];
 
 const valueFormatter = (value) => `${value}mm`;
 
 export default function Chart() {
+  const colors = ['rgb(154,85,255)', 'rgb(254,121,150)', 'rgb(146,165,245)'];
+
   return (
     <BarChart
       dataset={dataset}
@@ -116,6 +84,7 @@ export default function Chart() {
         { dataKey: 'newYork', label: 'New York', valueFormatter },
         { dataKey: 'seoul', label: 'Seoul', valueFormatter },
       ]}
+      colors={colors}
       {...chartSetting}
     />
   );

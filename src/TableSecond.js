@@ -1,10 +1,11 @@
-import { Avatar, Table, TableBody, TableCell, TableHead, TableRow, Typography } from "@mui/material";
+import { Avatar, Button, Table, TableBody, TableCell, TableHead, TableRow, TextField, Typography } from "@mui/material";
 import { Box } from "@mui/material";
 import Grid from '@mui/material/Grid';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
+import Checkbox from "@mui/material/Checkbox";
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -19,7 +20,7 @@ function TableSecond() {
     const isLargeScreen = useMediaQuery('(min-width:961px)');
     return (
         <>
-            <Box sx={{ flexGrow: 1 }}>
+            <Box sx={{ flexGrow: 1,position:"relative",top:"300px" }}>
                 <Grid container spacing={3}>
                     <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 7 : (isLargeScreen ? 7 : 8))} >
                         <Table>
@@ -37,7 +38,7 @@ function TableSecond() {
                                 </TableCell>
                                 <TableCell>Herman Beck</TableCell>
                                 <TableCell>	May 15, 2015</TableCell>
-                                <TableCell><progress id="file" value="32" max="100" style={{color:"red"}}> 32% </progress></TableCell>
+                                <TableCell><progress id="file" value="32" max="100" style={{ color: "red" }}> 32% </progress></TableCell>
                             </TableBody>
 
                             <TableBody>
@@ -72,14 +73,15 @@ function TableSecond() {
                                 <TableCell>Edward</TableCell>
                                 <TableCell>	Jun 05, 2015</TableCell>
                                 <TableCell><progress id="file" value="32" max="100"> 32% </progress></TableCell>
-
                             </TableBody>
-
-
                         </Table>
                     </Grid>
                     <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 5 : (isLargeScreen ? 5 : 8))} style={{ height: "200px" }}>
-                        <Item style={{ height: "200px" }}>Responsive</Item>
+                        <Item style={{ height: "200px" }}>
+                            <TextField></TextField>
+                            <Button variant="contained">Add</Button><br></br>
+                            <Typography></Typography> <Checkbox defaultChecked color="secondary" />
+                        </Item>
                     </Grid>
                 </Grid>
             </Box>

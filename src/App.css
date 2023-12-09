@@ -1,6 +1,7 @@
+
 .box {
-    height: 280px;
-    width: 16%;
+    height: 330px;
+    width: 35%;
     background-image: conic-gradient(rgb(69,201,184) 0.10turn,#72B6F1 0.70turn, rgb(254,119,150) 0.27turn);
     border-radius: 60%;
     display: flex;
@@ -8,6 +9,7 @@
     align-items: center;
     opacity: 0.6;
 }
+
 .inner-circle {
     width: 50%;
     height: 50%;

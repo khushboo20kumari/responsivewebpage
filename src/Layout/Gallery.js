@@ -28,9 +28,13 @@ function Gallery() {
                             display: "flex",
                             flexwrap: "wrap"
                         }}>
-                            <Box style={{ background: "coral", width: "48%" }}>A</Box>
+                            <Box style={{ background: "coral", width: "48%" }}>
+                                <img style={{width: "100%"}} src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_1.jpg"></img>
+                            </Box>
                         
-                            <Box style={{ background: "lightblue", width: "50%" }}>B</Box>
+                            <Box style={{ background: "lightblue", width: "50%" }}>
+                                <img style={{width: "100%"}} src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_2.jpg"></img>
+                            </Box>
                         </Item>
                         <Item style={{
                             width: "100%px",
@@ -39,8 +43,12 @@ function Gallery() {
                             display: "flex",
                             flexwrap: "wrap"
                         }}>
-                            <Box style={{ background: "coral", width: "48%" }}>A</Box>
-                            <Box style={{ background: "lightblue", width: "50%" }}>B</Box>
+                            <Box style={{ background: "coral", width: "48%" }}>
+                                <img style={{width: "100%"}} src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_4.jpg"></img>
+                            </Box>
+                            <Box style={{ background: "lightblue", width: "50%" }}>
+                                <img style={{width: "100%"}} src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_3.jpg"></img>
+                            </Box>
                         </Item>
                     </Grid>
                     
