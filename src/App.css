@@ -1,23 +1,4 @@
 
-.box {
-    
-    background-image: conic-gradient(rgb(69,201,184) 0.10turn,#72B6F1 0.70turn, rgb(254,119,150) 0.27turn);
-    border-radius: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.6;
-}
-
-.inner-circle {
-    
-    background: #ffffff;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 .Homeicon{
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     background-color:rgb(197,122,255);
@@ -25,3 +6,36 @@
     width: 50%;
     color: white;
 }
+
+.pie {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-image: conic-gradient(
+        rgb(254,112,150) 0 135deg,
+        rgb(115,181,241) 135deg 255.96deg,
+        rgb(109,211,200) 255.96deg 295.56deg,
+        rgb(153,161,246) 295.56deg 317.16deg
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #dde7ff 0 10px;
+    animation: pie 3s;
+  }
+  
+  .pie:hover .inner-circle {
+    box-shadow: #d2ddf6 0 0 10px 10px inset;
+  }
+  
+  .inner-circle {
+    width: 50%;
+    height: 50%;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #dde7ff 0 10px inset;
+  }
+  

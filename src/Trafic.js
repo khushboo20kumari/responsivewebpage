@@ -94,13 +94,7 @@ function Trafic() {
                 <Grid container spacing={3}>
                     <Grid item xs={12} sm={6} md={isLargeScreen ? 6 : 8}>
                         <Item style={{ height: isSmallScreen ? "300px" : "500px" }}>
-                            <center>
-                                <Box className="box" style={{ height: isSmallScreen ? "200px" : "330px", width: isSmallScreen ? "80%" : "35%" }}>
-                                    <Box className="inner-circle" style={{ width: isSmallScreen ? "80%" : "50%", height: isSmallScreen ? "80%" : "50%" }}>
-
-                                    </Box>
-                                </Box>
-                            </center>
+                           
                         </Item>
                     </Grid>
                     <Grid item xs={12} sm={6} md={isLargeScreen ? 6 : 8}>

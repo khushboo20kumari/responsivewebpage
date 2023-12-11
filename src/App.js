@@ -1,7 +1,7 @@
 
 // import { Table } from '@mui/material';
 import './App.css';
-import SideBar from "./Layout/SideBar"
+// import SideBar from "./Layout/SideBar"
 // import Trafic from './Trafic';
 // import Chart from './Chart';
 // import TableData from './Table';
@@ -13,9 +13,11 @@ import SideBar from "./Layout/SideBar"
 // import TableData from './Table';
 // import Practicle from './Practicle';
 // import Small from './Small';
+import Content from './Layout/Content';
 function App() {
   return (
     <div className="App">
+      <Content/>
       {/* <Small/> */}
       {/* <Practicle/> */}
       {/* <Content/> */}
@@ -24,7 +26,7 @@ function App() {
       {/* <Gallery></Gallery> */}
       {/* <TableData /> */}
       {/* <Trafic/> */}
-      <SideBar/>
+      {/* <SideBar/> */}
       {/* <Chart/> */}
 
 
