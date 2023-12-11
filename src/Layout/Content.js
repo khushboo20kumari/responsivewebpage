@@ -145,25 +145,28 @@ function Content({ DrawerHeader }) {
 
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 12 : (isLargeScreen ? 12 : 8))} >
 
-                            <Item style={{width:"100%",height:"800px"}}>
+                            <Item style={{width:"100%",height:"1000px"}}>
                                 <Box style={{height:"80px",width:"100%",border:"1px solid red"}}></Box>
                                 
 
-                                <Box sx={{ height: "350px", width: "95%", border: "1px solid red", m: "auto", position: "relative", top: "30px" ,display:"flex",flexWrap:"wrap"}}>
-                                    <Box style={{ width: "50%", border: "1px solid red", height: "350px" }}>
-                                        <img src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_1.jpg'></img>
+                                <Box sx={{ height: "400px", width: "95%", border: "1px solid red", m: "auto", position: "relative", top: "30px" ,display:"flex",flexWrap:"wrap"}}>
+                                    <Box style={{ width: "50%", border: "1px solid red", height: "400px" }}>
+                                        <img style={{width:"100%",height:"400px"}} src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_1.jpg'></img>
                                     </Box>
-                                    <Box style={{ width: "50%", border: "1px solid red", height: "350px" }}>
-                                        <img src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_2.jpg'></img>
+                                    <Box style={{ width: "50%", border: "1px solid red", height: "400px" }}>
+                                        <img style={{width:"100%",height:"400px"}} src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_2.jpg'></img>
                                     </Box>
                                 </Box>
-                                <Box sx={{ height: "350px", width: "95%", border: "1px solid red", m: "auto", position: "relative", top: "30px" ,display:"flex",flexWrap:"wrap"}}>
-                                    <Box style={{ width: "50%", border: "1px solid red", height: "350px" }}>
-                                        <img src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_4.jpg'></img>
+                                <Box sx={{ height: "400px", width: "95%", border: "1px solid red", m: "auto", position: "relative", top: "30px" ,display:"flex",flexWrap:"wrap"}}>
+                                    <Box style={{ width: "50%", border: "1px solid red", height: "400px" }}>
+                                        <img style={{width:"100%",height:"400px"}} src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_4.jpg'></img>
                                     </Box>
-                                    <Box style={{ width: "50%", border: "1px solid red", height: "350px" }}>
-                                        <img src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_3.jpg'></img>
+                                    <Box style={{ width: "50%", border: "1px solid red", height: "400px" }}>
+                                        <img  style={{width:"100%",height:"400px"}} src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_3.jpg'></img>
                                     </Box>
+                                </Box>
+                                <Box sx={{ height: "100px", width: "95%", border: "1px solid red", m: "auto"}}>
+                                    
                                 </Box>
                                 
 
