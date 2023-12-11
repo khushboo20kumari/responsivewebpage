@@ -9,10 +9,16 @@ import SideBar from "./Layout/SideBar"
 // import TableData from './Table';
 // import TableSecond from './TableSecond';
 // import Chart from './Chart';
-
+// import Content from './ResponsiveLayout/Content';
+// import TableData from './Table';
+// import Practicle from './Practicle';
+// import Small from './Small';
 function App() {
   return (
     <div className="App">
+      {/* <Small/> */}
+      {/* <Practicle/> */}
+      {/* <Content/> */}
       {/* <Chart/> */}
       {/* <TableSecond/> */}
       {/* <Gallery></Gallery> */}
@@ -20,6 +26,7 @@ function App() {
       {/* <Trafic/> */}
       <SideBar/>
       {/* <Chart/> */}
+
 
 
     </div>

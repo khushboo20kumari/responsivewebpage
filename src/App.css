@@ -1,7 +1,6 @@
 
 .box {
-    height: 330px;
-    width: 35%;
+    
     background-image: conic-gradient(rgb(69,201,184) 0.10turn,#72B6F1 0.70turn, rgb(254,119,150) 0.27turn);
     border-radius: 60%;
     display: flex;
@@ -11,12 +10,18 @@
 }
 
 .inner-circle {
-    width: 50%;
-    height: 50%;
+    
     background: #ffffff;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+.Homeicon{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background-color:rgb(197,122,255);
+    height: 400px;
+    width: 50%;
+    color: white;
 }

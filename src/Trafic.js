@@ -14,6 +14,7 @@
 //     )
 // }
 // export default Trafic;
+
 // import {  Box } from "@mui/material";
 
 // import * as React from 'react';
@@ -112,3 +113,4 @@ function Trafic() {
 }
 
 export default Trafic;
+
