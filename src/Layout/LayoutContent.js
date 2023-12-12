@@ -20,7 +20,7 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
 }));
 
-function ContentData({ DrawerHeader }) {
+function LayoutContent({ DrawerHeader }) {
     const isSmallScreen = useMediaQuery('(max-width:600px)');
     const isMediumScreen = useMediaQuery('(min-width:601px) and (max-width:960px)');
     const isLargeScreen = useMediaQuery('(min-width:961px)');
@@ -290,79 +290,5 @@ function ContentData({ DrawerHeader }) {
         </>
     )
 }
-export default ContentData;
+export default LayoutContent;
 
-
-
-// import {
-//     Typography,
-//     Box,
-//     TableContainer,
-//     Table,
-//     TableHead,
-//     TableBody,
-//     TableRow,
-//     TableCell,
-//     Paper,
-//     Grid,
-// } from "@mui/material";
-// import * as React from "react";
-// import { styled } from "@mui/material/styles";
-// import useMediaQuery from "@mui/material/useMediaQuery";
-// import Chart from "../Chart";
-// import TableData from "../Table";
-// import Gallery from "./Gallery";
-// import TableSecond from "../TableSecond";
-
-// const Item = styled(Paper)(({ theme }) => ({
-//     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-//     ...theme.typography.body2,
-//     padding: theme.spacing(1),
-//     textAlign: "center",
-//     color: theme.palette.text.secondary,
-// }));
-
-// function Content({ DrawerHeader }) {
-//     const isSmallScreen = useMediaQuery("(max-width:600px)");
-//     const isMediumScreen = useMediaQuery("(min-width:601px) and (max-width:960px)");
-//     const isLargeScreen = useMediaQuery("(min-width:961px)");
-
-//     return (
-//         <>
-//             <Box component="main" sx={{ flexGrow: 1, p: 3, background: "#f8f9fa" }}>
-               
-//                 <Box sx={{ flexGrow: 1, position: "relative", top: "50px", border: "1px solid red" }}>
-//                     <Grid container spacing={3}>
-//                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 12 : (isLargeScreen ? 12 : 12))}>
-//                             <Item>
-//                                 <TableContainer component={Paper} style={{ width: "100%" }}>
-//                                     <Table>
-//                                         <TableHead>
-//                                             <TableCell>name</TableCell>
-//                                             <TableCell>age</TableCell>
-//                                             <TableCell>name</TableCell>
-//                                             <TableCell>age</TableCell>
-//                                             <TableCell>name</TableCell>
-
-
-
-//                                         </TableHead>
-//                                         <TableBody>
-//                                             <TableCell>khusboo</TableCell>
-//                                             <TableCell>19</TableCell>
-//                                             <TableCell>khusboo</TableCell>
-//                                             <TableCell>19</TableCell>
-//                                         </TableBody>
-//                                     </Table>
-//                                 </TableContainer>
-//                             </Item>
-
-//                         </Grid>
-//                     </Grid>
-//                 </Box>
-//             </Box>
-//         </>
-//     );
-// }
-
-// export default Content;
