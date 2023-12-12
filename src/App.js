@@ -14,6 +14,7 @@ import SideBar from "./Layout/SideBar"
 // import Practicle from './Practicle';
 // import Small from './Small';
 // import Content from './Layout/Content';
+// import LayoutContent from './Layout/LayoutContent';
 function App() {
   return (
     <div className="App">
@@ -28,7 +29,7 @@ function App() {
       {/* <Trafic/> */}
       <SideBar/>
       {/* <Chart/> */}
-
+{/* <LayoutContent/> */}
 
 
     </div>

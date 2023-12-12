@@ -39,3 +39,26 @@
     box-shadow: #dde7ff 0 10px inset;
   }
   
+.Dashboardimg{
+  height: 230px;
+  width: 100%;
+  transition: all 2s,2s;
+}  
+
+.outerDashbord{
+  height: 245px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.row2{
+  height: 600px;
+}
+.row4{
+
+  width: 100%;
+  height: 900px;
+}
+.headericon{
+  height: 100px;
+  width: 50%;
+}

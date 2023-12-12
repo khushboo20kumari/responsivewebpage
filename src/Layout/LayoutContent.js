@@ -7,11 +7,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Chart from "../Chart";
 import { FormGroup, Checkbox, FormControlLabel } from "@mui/material"
-// import { Paper, Typography} from '@mui/material';
-
-// import { Box,Typography} from '@mui/material';
-import { Link, Box, Avatar, Table, TableBody, TableCell, TableHead, TableRow, Typography, TableContainer, TextField, Button } from "@mui/material";
-
+import { Box, Avatar, Table, TableBody, TableCell, TableHead, TableRow, Typography, TableContainer, TextField, Button } from "@mui/material";
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -36,37 +32,36 @@ function LayoutContent({ DrawerHeader }) {
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={3}>
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 4 : (isLargeScreen ? 4 : 8))} >
-                            <Item style={{ height: "200px" }}>
-                                <img style={{ height: "187px", width: "100%" }} src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_1.jpg"></img>
+                            <Item className='outerDashbord'>
+                                <img className='Dashboardimg' src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_1.jpg"></img>
                             </Item>
                         </Grid>
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 4 : (isLargeScreen ? 4 : 8))} style={{ height: "200px" }}>
-                            <Item style={{ height: "200px" }}>
-                                <img style={{ height: "187px", width: "100%" }} src="https://thumbs.dreamstime.com/b/d-render-paper-flowers-bouquet-botanical-background-isolated-clip-art-round-bouquet-floral-arrangement-d-render-paper-flowers-141550636.jpg"></img>
+                            <Item className='outerDashbord'>
+                                <img className='Dashboardimg' src="https://thumbs.dreamstime.com/b/d-render-paper-flowers-bouquet-botanical-background-isolated-clip-art-round-bouquet-floral-arrangement-d-render-paper-flowers-141550636.jpg"></img>
                             </Item>
                         </Grid>
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 4 : (isLargeScreen ? 4 : 8))} style={{ height: "200px" }}>
-                            <Item style={{ height: "200px" }}>
-                                <img style={{ height: "187px", width: "100%" }} src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_1.jpg"></img>
+                            <Item className='outerDashbord'>
+                                <img className='Dashboardimg' src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_1.jpg"></img>
                             </Item>
                         </Grid>
 
                     </Grid>
                 </Box>
+
                 <br></br>
+
                 <Box sx={{ flexGrow: 1 }}>
-
                     <Grid container spacing={3}>
-
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 7 : (isLargeScreen ? 7 : 8))} >
-                            <Item style={{ height: "400px" }}>
+                            <Item className="row2">
                                 <Chart />
                             </Item>
                         </Grid>
 
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 5 : (isLargeScreen ? 5 : 8))} style={{ height: "400px" }}>
-
-                            <Item style={{ height: isSmallScreen ? "400px" : "400px" }}>
+                            <Item style={{ height: isSmallScreen ? "600px" : "600px" }}>
                                 <Box style={{ height: "250px" }}>
                                     <center>
                                         <div class="pie">
@@ -160,13 +155,13 @@ function LayoutContent({ DrawerHeader }) {
                 </Box>
 
 
-                <Box sx={{ flexGrow: 1, position: "relative", top: "50px" }}>
+                <Box sx={{ flexGrow: 1, position: "relative", top: "100px" }}>
 
                     <Grid container spacing={3}>
 
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 12 : (isLargeScreen ? 12 : 8))} >
 
-                            <Item style={{ width: "100%", height: "1000px" }}>
+                            <Item className='row4'>
                                 <Box sx={{ height: "400px", width: "95%", m: "auto", position: "relative", top: "30px", display: "flex", flexWrap: "wrap" }}>
                                     <Box style={{ width: "50%", height: "400px" }}>
                                         <img style={{ width: "99%", height: "390px" }} src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_1.jpg'></img>
@@ -260,16 +255,15 @@ function LayoutContent({ DrawerHeader }) {
                             <Item >
 
                                 <TextField style={{ width: "70%", position: "relative", top: "35px" }}></TextField>
-                                <Button variant='contained' sx={{ position: "relative", top: "28px", height: "54px", width: "15%", m: 1 }}>add</Button>
-
+                                <Button variant='contained' sx={{ position: "relative", top: "28px", height: "54px", width: "15%", m: 1, background: "rgb(162,91,255)" }}>add</Button>
                                 <FormGroup sx={{ m: 6 }}>
 
-                                    <FormControlLabel control={<Checkbox defaultChecked />} label="Pick up kids from school" />
-                                    <FormControlLabel control={<Checkbox defaultChecked />} label="Prepare for presentation" />
-                                    <FormControlLabel control={<Checkbox defaultChecked />} label="Print Statements" />
-                                    <FormControlLabel control={<Checkbox defaultChecked />} label="Create invoice" />
-                                    <FormControlLabel control={<Checkbox defaultChecked />} label="Call John" />
-                                    <FormControlLabel control={<Checkbox defaultChecked />} label="Meeting with Alisa" />
+                                    <FormControlLabel control={<Checkbox defaultChecked color="secondary" />} label="Pick up kids from school" />
+                                    <FormControlLabel control={<Checkbox defaultChecked color="secondary" />} label="Prepare for presentation" />
+                                    <FormControlLabel control={<Checkbox defaultChecked color="secondary" />} label="Print Statements" />
+                                    <FormControlLabel control={<Checkbox defaultChecked color="secondary" />} label="Create invoice" />
+                                    <FormControlLabel control={<Checkbox defaultChecked color="secondary" />} label="Call John" />
+                                    <FormControlLabel control={<Checkbox defaultChecked color="secondary" />} label="Meeting with Alisa" />
 
                                 </FormGroup>
 
@@ -277,7 +271,24 @@ function LayoutContent({ DrawerHeader }) {
                         </Grid>
                     </Grid>
                 </Box>
-
+               <div className='container-fluid'>
+                <div className='row'>
+                    <div className='col-sm-12'>
+                        <p>i am khushboo </p>
+                    </div>
+                </div>
+                
+               </div>
+                {/* <Box sx={{ flexGrow: 1 ,position:"relative",top:"500px"}}>
+                    <Grid container spacing={3}>
+                        <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 12 : (isLargeScreen ? 12 : 8))} >
+                            <Item>
+                                jsahgsfkjda
+                                
+                            </Item>
+                        </Grid>
+                    </Grid>
+                </Box> */}
             </Box>
         </>
     )

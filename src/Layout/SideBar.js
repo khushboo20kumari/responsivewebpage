@@ -16,9 +16,17 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import LayoutContent from './LayoutContent';
+import MailIcon from '@mui/icons-material/Mail';
+import { Avatar, Button } from '@mui/material';
+import HomeIcon from '@mui/icons-material/Home';
+import { Input } from '@mui/material';
+import TocIcon from '@mui/icons-material/Toc';
+
+import FullscreenIcon from '@mui/icons-material/Fullscreen';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import WatchLaterIcon from '@mui/icons-material/WatchLater';
+const ariaLabel = { 'aria-label': 'description' };
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -66,6 +74,7 @@ const AppBar = styled(MuiAppBar, {
       duration: theme.transitions.duration.enteringScreen,
     }),
   }),
+
 }));
 
 const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' })(
@@ -100,7 +109,9 @@ export default function MiniDrawer() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
+
+
+      <AppBar position="fixed" open={open} style={{ background: "white" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -112,22 +123,49 @@ export default function MiniDrawer() {
               ...(open && { display: 'none' }),
             }}
           >
-            <MenuIcon />
+
+            <MenuIcon style={{ color: "black", opacity: 0.5 }} />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Mini variant drawer
-          </Typography>
+
+          <Input noWrap component="div" style={{ width: "65%" }} placeholder="Search Projects" inputProps={ariaLabel} />
+          <Box style={{ width: "30%", display: "flex" }}>
+            <Box style={{ width: "15%" }}>
+              <Avatar src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/faces/face1.jpg'></Avatar>
+            </Box>
+            <Box style={{ width: "30%", opacity: "5px" }}>
+              <Typography style={{ color: "black", opacity: 0.5 }}>David</Typography>
+            </Box>
+            <Box style={{ width: "15%", opacity: 0.5 }}>
+              <FullscreenIcon style={{ color: "black" }} />
+            </Box>
+            <Box style={{ width: "15%" }}>
+              <MailIcon style={{ color: "black", opacity: 0.5 }} />
+            </Box>
+            <Box style={{ width: "15%" }}>
+              <NotificationsIcon style={{ color: "black", opacity: 0.5 }} />
+
+            </Box>
+            <Box style={{ width: "15%" }}>
+              <WatchLaterIcon style={{ color: "black", opacity: 0.5 }} />
+
+            </Box>
+            <Box style={{ width: "15%" }}>
+              <TocIcon style={{ color: "black", opacity: 0.5 }} />
+            </Box>
+          </Box>
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
+          <img className='headericon' src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/logo.svg'></img>
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </DrawerHeader>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          <Avatar sx={{ m: 2 }} src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/faces/face1.jpg'></Avatar>
+          {['Dashboard', 'Basic UI Elements', 'Icons', 'Forms', 'Drafts', "Charts", "Tables", "Sample Pages"].map((text, index) => (
             <ListItem key={text} disablePadding sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
@@ -143,42 +181,28 @@ export default function MiniDrawer() {
                     justifyContent: 'center',
                   }}
                 >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {index ? <MailIcon /> : <HomeIcon style={{ color: "rgb(162,91,255)" }} />}
                 </ListItemIcon>
                 <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
           ))}
+
         </List>
         <Divider />
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem key={text} disablePadding sx={{ display: 'block' }}>
-              <ListItemButton
-                sx={{
-                  minHeight: 48,
-                  justifyContent: open ? 'initial' : 'center',
-                  px: 2.5,
-                }}
-              >
-                <ListItemIcon
-                  sx={{
-                    minWidth: 0,
-                    mr: open ? 3 : 'auto',
-                    justifyContent: 'center',
-                  }}
-                >
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-              </ListItemButton>
-            </ListItem>
-          ))}
+
+          <ListItem>
+            <Button variant='contained' sx={{ width: "90%", m: "auto", height: "45px", background: "rgb(162,91,255)" }}>+Add Projects </Button>
+          </ListItem>
         </List>
+
       </Drawer>
+      <DrawerHeader />
+
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <LayoutContent DrawerHeader={DrawerHeader}/>
-        </Box>
+        <LayoutContent DrawerHeader={DrawerHeader} />
+      </Box>
     </Box>
   );
 }
