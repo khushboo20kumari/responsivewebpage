@@ -198,10 +198,14 @@ export default function MiniDrawer() {
         </List>
 
       </Drawer>
-      <DrawerHeader />
+      {/* <DrawerHeader style={{background:"rgb(242,237,243)"}}/>
 
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <LayoutContent DrawerHeader={DrawerHeader} />
+      </Box> */}
+      <Box component="main" sx={{ flexGrow: 1, background: "rgb(242,237,243)" }}>
+        <DrawerHeader />
+        <LayoutContent/>
       </Box>
     </Box>
   );
