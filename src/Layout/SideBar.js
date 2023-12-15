@@ -20,7 +20,7 @@ import LayoutContent from './LayoutContent';
 import MailIcon from '@mui/icons-material/Mail';
 import { Avatar, Button } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
-import { Input } from '@mui/material';
+import { TextField} from '@mui/material';
 import TocIcon from '@mui/icons-material/Toc';
 
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
@@ -109,8 +109,6 @@ export default function MiniDrawer() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-
-
       <AppBar position="fixed" open={open} style={{ background: "white" }}>
         <Toolbar>
           <IconButton
@@ -126,8 +124,9 @@ export default function MiniDrawer() {
 
             <MenuIcon style={{ color: "black", opacity: 0.5 }} />
           </IconButton>
-
-          <Input noWrap component="div" style={{ width: "65%" }} placeholder="Search Projects" inputProps={ariaLabel} />
+          <TextField id="standard-basic" label="Search Project ...." variant="standard" sx={{ width: "60%" ,m:"auto",borderRadius:"300px"}}/>
+          {/* <TextField id="outlined-basic" label="Search Project...." variant="outlined" sx={{ width: "60%" ,m:"auto",borderRadius:"300px"}}/> */}
+          {/* <Input noWrap component="div" style={{ width: "65%" }} placeholder="Search Projects" inputProps={ariaLabel} /> */}
           <Box style={{ width: "30%", display: "flex" }}>
             <Box style={{ width: "15%" }}>
               <Avatar src='https://demo.bootstrapdash.com/purple-admin-free/assets/images/faces/face1.jpg'></Avatar>
@@ -187,25 +186,19 @@ export default function MiniDrawer() {
               </ListItemButton>
             </ListItem>
           ))}
-
         </List>
         <Divider />
-        <List>
 
+        <List>
           <ListItem>
             <Button variant='contained' sx={{ width: "90%", m: "auto", height: "45px", background: "rgb(162,91,255)" }}>+Add Projects </Button>
           </ListItem>
         </List>
-
       </Drawer>
-      {/* <DrawerHeader style={{background:"rgb(242,237,243)"}}/>
 
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <LayoutContent DrawerHeader={DrawerHeader} />
-      </Box> */}
       <Box component="main" sx={{ flexGrow: 1, background: "rgb(242,237,243)" }}>
         <DrawerHeader />
-        <LayoutContent/>
+        <LayoutContent />
       </Box>
     </Box>
   );

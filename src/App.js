@@ -4,6 +4,8 @@ import './App.css';
 // import ChartBar from './Chart';
 import SideBar from "./Layout/SideBar"
 
+import { Typography } from "@mui/material";
+
 // import Trafic from './Trafic';
 // import Chart from './Chart';
 // import TableData from './Table';
@@ -41,3 +43,4 @@ function App() {
 }
 
 export default App;
+

@@ -7,10 +7,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Chart from "../Chart";
 import {FormGroup,Checkbox,FormControlLabel} from "@mui/material"
-// import { Paper, Typography} from '@mui/material';
-
-// import { Box,Typography} from '@mui/material';
-import {Link, Box, Avatar, Table, TableBody, TableCell, TableHead, TableRow, Typography, TableContainer, TextField, Button } from "@mui/material";
+import {Box, Avatar, Table, TableBody, TableCell, TableHead, TableRow, Typography, TableContainer, TextField, Button } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -24,6 +21,7 @@ function ContentData({ DrawerHeader }) {
     const isSmallScreen = useMediaQuery('(max-width:600px)');
     const isMediumScreen = useMediaQuery('(min-width:601px) and (max-width:960px)');
     const isLargeScreen = useMediaQuery('(min-width:961px)');
+
     return (
         <>
             <Box component="main" sx={{ flexGrow: 1, p: 3, background: "#f8f9fa" }}>
@@ -39,7 +37,7 @@ function ContentData({ DrawerHeader }) {
                     <Grid container spacing={3}>
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 4 : (isLargeScreen ? 4 : 8))} >
                             <Item style={{ height: "200px" }}>
-                                <img style={{ height: "187px", width: "100%" }} src="https://demo.bootstrapdash.com/purple-admin-free/assets/images/dashboard/img_1.jpg"></img>
+                                <img style={{ height: "187px", width: "100%" }} src="weekly.png"></img>
                             </Item>
                         </Grid>
                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 4 : (isLargeScreen ? 4 : 8))} style={{ height: "200px" }}>
@@ -293,76 +291,3 @@ function ContentData({ DrawerHeader }) {
 export default ContentData;
 
 
-
-// import {
-//     Typography,
-//     Box,
-//     TableContainer,
-//     Table,
-//     TableHead,
-//     TableBody,
-//     TableRow,
-//     TableCell,
-//     Paper,
-//     Grid,
-// } from "@mui/material";
-// import * as React from "react";
-// import { styled } from "@mui/material/styles";
-// import useMediaQuery from "@mui/material/useMediaQuery";
-// import Chart from "../Chart";
-// import TableData from "../Table";
-// import Gallery from "./Gallery";
-// import TableSecond from "../TableSecond";
-
-// const Item = styled(Paper)(({ theme }) => ({
-//     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-//     ...theme.typography.body2,
-//     padding: theme.spacing(1),
-//     textAlign: "center",
-//     color: theme.palette.text.secondary,
-// }));
-
-// function Content({ DrawerHeader }) {
-//     const isSmallScreen = useMediaQuery("(max-width:600px)");
-//     const isMediumScreen = useMediaQuery("(min-width:601px) and (max-width:960px)");
-//     const isLargeScreen = useMediaQuery("(min-width:961px)");
-
-//     return (
-//         <>
-//             <Box component="main" sx={{ flexGrow: 1, p: 3, background: "#f8f9fa" }}>
-               
-//                 <Box sx={{ flexGrow: 1, position: "relative", top: "50px", border: "1px solid red" }}>
-//                     <Grid container spacing={3}>
-//                         <Grid item xs={isSmallScreen ? 12 : (isMediumScreen ? 12 : (isLargeScreen ? 12 : 12))}>
-//                             <Item>
-//                                 <TableContainer component={Paper} style={{ width: "100%" }}>
-//                                     <Table>
-//                                         <TableHead>
-//                                             <TableCell>name</TableCell>
-//                                             <TableCell>age</TableCell>
-//                                             <TableCell>name</TableCell>
-//                                             <TableCell>age</TableCell>
-//                                             <TableCell>name</TableCell>
-
-
-
-//                                         </TableHead>
-//                                         <TableBody>
-//                                             <TableCell>khusboo</TableCell>
-//                                             <TableCell>19</TableCell>
-//                                             <TableCell>khusboo</TableCell>
-//                                             <TableCell>19</TableCell>
-//                                         </TableBody>
-//                                     </Table>
-//                                 </TableContainer>
-//                             </Item>
-
-//                         </Grid>
-//                     </Grid>
-//                 </Box>
-//             </Box>
-//         </>
-//     );
-// }
-
-// export default Content;
